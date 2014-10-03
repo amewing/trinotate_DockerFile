@@ -68,7 +68,9 @@ RUN mkdir /trinotate && cd /trinotate;\
 
 RUN apt-get install -y cpanminus ;\
     cpanm -v URI::Escape ;\
-    cpanm -v DBI 
+    cpanm -v DBI ;\
+    cpanm -v DBD::Sqlite ;\
+    cpanm -v PerlIO::gzip
 
 env PATH /trinity:/blast/ncbi-blast-2.2.29+/bin:/trinotate/Trinotate_r20140708:$PATH 
 
