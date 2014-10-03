@@ -67,7 +67,8 @@ RUN mkdir /trinotate && cd /trinotate;\
 ## Install perl URI:Escape module 
 
 RUN apt-get install -y cpanminus ;\
-    cpanm -v URI::Escape
+    cpanm -v URI::Escape ;\
+    cpanm -v DBI 
 
 env PATH /trinity:/blast/ncbi-blast-2.2.29+/bin:/trinotate/Trinotate_r20140708:$PATH 
 
