@@ -7,6 +7,7 @@ RUN apt-get update;\
     apt-get install -y -q openjdk-7-jre;\
     apt-get clean
 
+
 ## Install Trinity
 RUN mkdir /trinity && cd /trinity;\
     wget http://sourceforge.net/projects/trinityrnaseq/files/trinityrnaseq_r20140413p1.tar.gz;\
